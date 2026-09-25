@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart & Checkout | Uday Chutney and Masale</title>
+  <meta name="description" content="Review your cart and place your order with Uday Chutney and Masale via WhatsApp." />
+  <meta property="og:title" content="Cart & Checkout | Uday Chutney and Masale" />
+  <meta property="og:description" content="Review your cart and place your order with Uday Chutney and Masale via WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://udaychutneymasale.netlify.app/checkout.html" />
+  <meta property="og:image" content="https://udaychutneymasale.netlify.app/images/logo/uday-logo.jpg" />
+  <link rel="icon" type="image/jpeg" href="images/logo/uday-logo.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Your Cart</h1>
+
+      <div id="checkout-empty-state" style="display:none;">
+        <p>Your cart is empty.</p>
+        <a href="shop.html" class="btn btn-primary" style="margin-top: 1rem;">Browse Products</a>
+      </div>
+
+      <div class="checkout-layout" id="checkout-layout">
+        <div class="checkout-cart-col">
+          <div id="cart-items-list">
+            <!-- Rendered by js/checkout.js -->
+          </div>
+
+          <div class="cart-subtotal-row">
+            <span>Subtotal</span>
+            <span id="cart-subtotal-amount">₹0</span>
+          </div>
+          <p id="cart-unpriced-note" class="variant-note" style="display:none;">
+            Some items have prices pending confirmation — final total will be confirmed on WhatsApp.
+          </p>
+
+          <a href="shop.html" class="link-arrow">← Continue Shopping</a>
+        </div>
+
+        <div class="checkout-form-col">
+          <h2>Delivery Details</h2>
+          <form id="checkout-form">
+            <div class="form-group">
+              <label for="cf-name">Full Name *</label>
+              <input type="text" id="cf-name" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Mobile Number *</label>
+              <input type="tel" id="cf-phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" />
+            </div>
+            <div class="form-group">
+              <label for="cf-address">Address *</label>
+              <input type="text" id="cf-address" required placeholder="House/Flat No, Street" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-area">Area/Locality *</label>
+                <input type="text" id="cf-area" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-city">City *</label>
+                <input type="text" id="cf-city" required value="Kolhapur" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-pin">PIN Code *</label>
+              <input type="text" id="cf-pin" required pattern="[0-9]{6}" placeholder="6-digit PIN" />
+            </div>
+            <div class="form-group">
+              <label for="cf-notes">Order Notes (optional)</label>
+              <textarea id="cf-notes" rows="2" placeholder="Delivery instructions..."></textarea>
+            </div>
+
+            <p class="checkout-delivery-note">Delivery charges will be confirmed on WhatsApp.</p>
+
+            <button type="submit" class="btn btn-whatsapp btn-block btn-lg" id="place-order-btn">
+              Place Order on WhatsApp
+            </button>
+            <p class="checkout-disclaimer">
+              This only prepares your order message — you'll need to press Send in WhatsApp to confirm. The order is not placed until you send it.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

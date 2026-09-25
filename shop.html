@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Uday Chutney and Masale</title>
+  <meta name="description" content="Browse all chutneys and masalas from Uday Chutney and Masale, Kolhapur. Search, filter by category, and order through WhatsApp." />
+  <meta property="og:title" content="Shop | Uday Chutney and Masale" />
+  <meta property="og:description" content="Browse all chutneys and masalas from Uday Chutney and Masale, Kolhapur. Search, filter by category, and order through WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://udaychutneymasale.netlify.app/shop.html" />
+  <meta property="og:image" content="https://udaychutneymasale.netlify.app/images/logo/uday-logo.jpg" />
+  <link rel="icon" type="image/jpeg" href="images/logo/uday-logo.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="section shop-section">
+    <div class="container">
+      <h1 class="section-title">Our Shop</h1>
+
+      <div class="shop-controls">
+        <div class="shop-search">
+          <input type="text" id="shop-search-input" placeholder="Search chutneys, masalas..." />
+        </div>
+        <select id="shop-sort-select" class="shop-sort">
+          <option value="featured">Sort by: Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A–Z</option>
+        </select>
+      </div>
+
+      <div class="shop-category-chips" id="shop-category-chips">
+        <!-- Rendered by js/shop.js -->
+      </div>
+
+      <div class="product-grid" id="shop-product-grid">
+        <!-- Rendered by js/shop.js -->
+      </div>
+
+      <p id="shop-no-results" class="shop-no-results" style="display:none;">
+        No products match your search.
+      </p>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

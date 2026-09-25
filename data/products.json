@@ -1,0 +1,89 @@
+{
+  "categories": [
+    { "id": "chutney-masalas", "name": "Chutney Masalas" },
+    { "id": "everyday-masalas", "name": "Everyday Masalas" },
+    { "id": "chilli-powder", "name": "Chilli Powder" }
+  ],
+  "products": [
+    {
+      "id": "UDAY001",
+      "name": "Hotel Special Kanda Lasun Masala",
+      "category": "chutney-masalas",
+      "shortDescription": "Special Kolhapuri onion-garlic chutney masala.",
+      "description": "Hotel Special Kanda Lasun Masala — placeholder description, to be replaced with wording confirmed by the business owner.",
+      "descriptionIsPlaceholder": true,
+      "image": "images/products/hotel-special-kanda-lasun-masala.jpg",
+      "variants": [
+        { "weight": "1 pack", "price": 20, "priceConfirmed": true }
+      ],
+      "variantsNote": "Packaging also mentions 1 kg and 1/2 kg sizes — prices not yet confirmed.",
+      "ingredients": [],
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "UDAY002",
+      "name": "Uday Special Onion Garlic Masala (No. 1)",
+      "category": "chutney-masalas",
+      "shortDescription": "Uday's flagship onion-garlic masala.",
+      "description": "Uday Special Onion Garlic Masala — placeholder description, to be replaced with wording confirmed by the business owner.",
+      "descriptionIsPlaceholder": true,
+      "image": "images/products/uday-special-onion-garlic-masala.jpg",
+      "variants": [
+        { "weight": "1 pack", "price": null, "priceConfirmed": false }
+      ],
+      "variantsNote": "Price not visible on packaging — needs confirmation.",
+      "ingredients": [],
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "UDAY003",
+      "name": "Lal Tikhat Special Chilli Powder",
+      "category": "chilli-powder",
+      "shortDescription": "Special red & hot chilli powder — Kashmiri, Byadgi, Jawari blend.",
+      "description": "Lal Tikhat Special Chilli Powder — placeholder description, to be replaced with wording confirmed by the business owner.",
+      "descriptionIsPlaceholder": true,
+      "image": "images/products/lal-tikhat-chilli-powder.jpg",
+      "variants": [
+        { "weight": "1 pack", "price": 10, "priceConfirmed": true }
+      ],
+      "variantsNote": "",
+      "ingredients": [],
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "UDAY004",
+      "name": "Shahi Paneer Masala",
+      "category": "everyday-masalas",
+      "shortDescription": "Blend for making Shahi Paneer at home.",
+      "description": "Shahi Paneer Masala — placeholder description, to be replaced with wording confirmed by the business owner.",
+      "descriptionIsPlaceholder": true,
+      "image": "images/products/shahi-paneer-masala.jpg",
+      "variants": [
+        { "weight": "1 pack", "price": 10, "priceConfirmed": true }
+      ],
+      "variantsNote": "",
+      "ingredients": [],
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "UDAY005",
+      "name": "Uday Bhataacha Masala",
+      "category": "everyday-masalas",
+      "shortDescription": "For biryani, pulao and masale bhat.",
+      "description": "Uday Bhataacha Masala — placeholder description, to be replaced with wording confirmed by the business owner.",
+      "descriptionIsPlaceholder": true,
+      "image": "images/products/bhatacha-masala.jpg",
+      "variants": [
+        { "weight": "1 pack", "price": 10, "priceConfirmed": true }
+      ],
+      "variantsNote": "",
+      "ingredients": [],
+      "available": true,
+      "featured": false
+    }
+  ]
+}
